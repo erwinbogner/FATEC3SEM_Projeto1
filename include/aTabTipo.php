@@ -10,7 +10,7 @@
     $usuario = "root";
     $senha   = "sou10VEZ";
     $banco   = "projeto1";
-    $tabela  = "tbmontadora";
+    $tabela  = "tbtipoveiculos";
     //
     if ($parametro) {
         $sql     = "select * from {$tabela} where nome like '$parametro%' order by id";
@@ -31,11 +31,11 @@
             ?>
                 <tr>
                     <td><?php echo $linha['id'] ?></td>
-                    <td><?php echo $linha['nomeMontadora'] ?></td>
+                    <td><?php echo $linha['nomeTipo'] ?></td>
                     <td><?php echo $linha['dt_inclusao'] ?></td>
                     
-<td><a href="<?php echo "ALTMontadora.php?id=" . $linha['id'] . "&nomeMontadora=" . $linha[ 'nomeMontadora'] ?>">Alterar</a></td>  
-<td><a href="<?php echo "excluirMontadora.php?id=" . $linha['id']?>">EXC</a></td>                    
+<td><a href="<?php echo "ALTTipo.php?id=" . $linha['id'] . "&nomeTipo=" . $linha[ 'nomeTipo'] ?>">Alterar</a></td>  
+<td><a href="<?php echo "excluirTipo.php?id=" . $linha['id']?>">EXC</a></td>                    
                     
 
                 <!--<td>EXC</td>!-->
