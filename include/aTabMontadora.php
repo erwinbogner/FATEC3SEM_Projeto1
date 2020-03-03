@@ -3,13 +3,14 @@
                             
     $parametro = filter_input( INPUT_GET, "parametro");
 
-    $server  = "localhost";
+    //$server  = "localhost";
     //$server  = "http://172.17.14.3";
     //$server  = 'VirtLinux';
     //$server  = "172.17.14.3";
-    $usuario = "root";
-    $senha   = "sou10VEZ";
-    $banco   = "projeto1";
+    //$server  = '192.168.1.161';
+    //$usuario = "root";
+    //$senha   = "sou10VEZ";
+    //$banco   = "projeto1";
     $tabela  = "tbmontadora";
     //
     if ($parametro) {
