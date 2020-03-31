@@ -7,7 +7,7 @@
 <body>
     <header>
         <?php include( 'include/header.php'); ?>
-        <?php include( 'include/bd.php'); ?>
+        <?php include( 'include/bd.php'); ?>        
     </header>
     <main id="container-fluid">
         <div class="menu row">
@@ -16,21 +16,26 @@
         <!-- CONTEUDO=============================================== !-->
 
         <div id="conteudo">
-            <h2> [Montadora] </h2>
+            <h2> [Proprietários] </h2>
             <br>
             <table>
                 <thead>
                    <tr>
                         <th>ID</th>
-                        <th>Montadora</th>
+                        <th>CPF /CNPJ</th>
+                        <th>Proprietário</th>
+                        <th>TEL</th>
+                        <th>e-mail</th>
+                        <th>UF</th>
                         <th>DT Inclusão</th>
+                        <th>DT Alteração</th>
                         <th>Alterar</th>
                         <th>Excluir</th>                    
                     </tr>
                 </thead>
                 <tbody>
-                    <!--acesso ao banco de dados leitura tabela!-->
-                   <?php include( 'include/aTabMontadora.php'); ?> 
+                   <!--acesso ao banco de dados leitura tabela!-->
+                   <?php include( 'include/aTabProprietario.php'); ?> 
                 </tbody>
             </table>
             <br>
@@ -38,9 +43,9 @@
             <br>
             <br>
             <br>
-            <nav class="CadMontMenu">
+            <nav class="CadProprMenu">
                 <ul>
-                    <li><a href="NVMontadora.php">Inclusão</a></li>
+                    <li><a href="NVProprietario.php">Inclusão</a></li>
                     <li><a href="">Pesquisa</a></li>     
                 </ul>
             </nav>

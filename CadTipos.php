@@ -7,6 +7,7 @@
 <body>
     <header>
         <?php include( 'include/header.php'); ?>
+        <?php include( 'include/bd.php'); ?>        
     </header>
     <main id="container-fluid">
         <div class="menu row">

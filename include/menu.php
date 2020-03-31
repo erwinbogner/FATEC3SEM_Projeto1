@@ -13,13 +13,13 @@
                         <a class="dropdown-item" href="CadMontadora.php">Montadoras</a>
                         <a class="dropdown-item" href="CadTipos.php">Tipos Veiculos</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Proprietários</a>
+                        <a class="dropdown-item" href="CadProprietario.php">Proprietários</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Movimentos</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Veiculos</a>
+                        <a class="dropdown-item" href="CadVeiculoProprietario.php">Veiculos</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

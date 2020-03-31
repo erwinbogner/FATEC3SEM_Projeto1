@@ -16,7 +16,7 @@
 
         <?php
             $id = filter_input( INPUT_GET, 'id');
-            $nomemontadora = filter_input( INPUT_GET, 'nomeTipo');
+            $nometipo = filter_input( INPUT_GET, 'nomeTipo');
                                
                     
         ?>

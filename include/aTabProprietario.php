@@ -1,7 +1,7 @@
 <?php
                             
     $parametro = filter_input( INPUT_GET, "parametro");
-    $tabela  = "tbmontadora";
+    $tabela  = "tbproprietario";
     //
     if ($parametro) {
         $sql     = "select * from {$tabela} where nome like '$parametro%' order by id";
@@ -22,11 +22,16 @@
             ?>
                 <tr>
                     <td><?php echo $linha['id'] ?></td>
-                    <td><?php echo $linha['nomeMontadora'] ?></td>
+                    <td><?php echo $linha['cnpjcpf'] ?></td>
+                    <td><?php echo $linha['nomeProprietario'] ?></td>
+                    <td><?php echo $linha['foneProprietario'] ?></td>
+                    <td><?php echo $linha['emailProprietario'] ?></td>
+                    <td><?php echo $linha['ufProprietario'] ?></td>
                     <td><?php echo $linha['dt_inclusao'] ?></td>
+                    <td><?php echo $linha['dt_alteracao'] ?></td>
                     
-<td><a href="<?php echo "ALTMontadora.php?id=" . $linha['id'] . "&nomeMontadora=" . $linha[ 'nomeMontadora'] ?>">Alterar</a></td>  
-<td><a href="<?php echo "excluirMontadora.php?id=" . $linha['id']?>">EXC</a></td>                    
+<td><a href="<?php echo "ALTProprietario.php?id=" . $linha['id'] . "&nomeProprietario=" . $linha[ 'nomeProprietario'] ?>">Alterar</a></td>  
+<td><a href="<?php echo "excluirProprietario.php?id=" . $linha['id']?>">EXC</a></td>                    
                     
 
                 <!--<td>EXC</td>!-->

@@ -15,14 +15,16 @@
         </div>
         <!-- CONTEUDO=============================================== !-->
 
-        <div id="conteudo">
-            <h2> [Montadora] </h2>
+      <div id="conteudo">
+            <h2> [Veiclos] </h2>
             <br>
             <table>
                 <thead>
                    <tr>
                         <th>ID</th>
-                        <th>Montadora</th>
+                        <th>Placa</th>
+                        <th>Veiculo</th>
+                        
                         <th>DT Inclusão</th>
                         <th>Alterar</th>
                         <th>Excluir</th>                    
@@ -30,7 +32,7 @@
                 </thead>
                 <tbody>
                     <!--acesso ao banco de dados leitura tabela!-->
-                   <?php include( 'include/aTabMontadora.php'); ?> 
+                   <?php include( 'include/aTabVeiculo.php'); ?> 
                 </tbody>
             </table>
             <br>
@@ -40,11 +42,13 @@
             <br>
             <nav class="CadMontMenu">
                 <ul>
-                    <li><a href="NVMontadora.php">Inclusão</a></li>
+                    <li><a href="NVVeiculo.php">Inclusão</a></li>
                     <li><a href="">Pesquisa</a></li>     
                 </ul>
             </nav>
-        </div>
+        </div>        
+      
+       
         <!-- CONTEUDO=============================================== !-->
     </main>
     <footer class="footerGeral">
@@ -55,19 +59,3 @@
 </html>
 
 
-
-
-<!--
-<form id="f_CadMontadora">
-                <br>
-                <label id="l_id">
-                    <input type="text" name="i_id">
-                </label>
-                <br>
-                <label id="l_montadora">
-                    <input 
-                </label>
-            </form>
-            
-           
-!-->          

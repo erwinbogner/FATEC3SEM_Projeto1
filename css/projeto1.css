@@ -9,7 +9,7 @@
 
 #container-fluid {
     margin-top: 20px;
-    height: 520px;
+    height: 700px;
     
 }
 
@@ -153,4 +153,27 @@ table, th, td {
     border: 1px solid blue;
     width: 500px;
     height: auto;
+}
+
+#salvarVeic {
+    border: 1px solid black;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: auto;
+}
+
+.l1 {
+    margin-left: 20px;
+    width: 300px;
+    text-align: justify;
+}
+
+
+#perro1, #perro2, #perro3, #perro4, #perro5 {
+    font-size: 1.1em;
+    margin-left: 50px;
+    height: 14px;
+    width: auto;
 }

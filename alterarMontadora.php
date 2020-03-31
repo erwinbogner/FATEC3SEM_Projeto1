@@ -1,20 +1,14 @@
 <?php
+
+    include_once( 'include/bd.php');
     $id    =filter_input( INPUT_GET, "id");
     $nome  =filter_input( INPUT_GET, "nomemontadora");
+
     //$date = date( 'Y-m-d H:i:s');
-
-    //$server  = "localhost";
-    //$server  = "http://172.17.14.3";
-    //$server  = 'VirtLinux';
-    //$server  = "172.17.14.3";
-    //$usuario = "root";
-    //$senha   = "sou10VEZ";
-    //$banco   = "projeto1";
     $tabela  = "tbmontadora";
-    $link=mysqli_connect( $server, $usuario, $senha, $banco);
+    //$link=mysqli_connect( $server, $usuario, $senha, $banco);
+    $link = new mysqli( $server, $usuario, $senha, $banco);
 
-    echo $id;
-    echo $nome;
     //$link=mysqli_connect( "localhost", "root", "", "agenda_telefonica");
     //$link=mysqli_connect( "192.168.1.166", "root", "sou10VEZ", "agenda_telefonica");
     if( $link ) {
